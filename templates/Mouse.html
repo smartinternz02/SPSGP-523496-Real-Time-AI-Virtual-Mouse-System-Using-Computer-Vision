@@ -1,0 +1,57 @@
+ <style>
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+
+}
+body{
+  text-align: center;
+
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgI006JIVGBrEnB7uw25OdJ1DfRjwXr8TpzA&usqp=CAU");
+  height: 700px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  color:white;
+}
+div.container{
+    height:400px;
+    width:600px;
+}
+
+</style>
+<body>
+<ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/mouse">Mouse</a></li>
+    </ul>
+<div class="container">
+
+    <div class="row">
+        <div class="col-lg-8  offset-lg-2">
+            <h3 class="mt-5">Live Streaming</h3>
+            <img src="{{ url_for('video_feed') }}" width="100%">
+        </div>
+    </div>
+</div>
+</body>
