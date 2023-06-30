@@ -17,8 +17,6 @@ def index():
 @app.route('/mouse')
 def mouse():
     return render_template('Mouse.html')
-
-
 def gen_frames():
     pTime = 0  # Used to calculate frame rate
     width = 640  # Width of Camera
@@ -86,4 +84,4 @@ def video_feed():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
